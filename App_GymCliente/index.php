@@ -19,6 +19,13 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="./public/css/style.min.css" rel="stylesheet">
+
+    <style>
+        .center-text {
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
 
 <body class="bg-white">
@@ -33,18 +40,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="index.html" class="nav-item nav-link active">Menu</a>
-                    <a href="about.html" class="nav-item nav-link">Nosotros</a>
-                    <a href="feature.html" class="nav-item nav-link">Caracteristicas</a>
-                    <a href="class.html" class="nav-item nav-link">Clases</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="index.php" class="nav-item nav-link active">Menu</a>
+                    <a href="./about.php" class="nav-item nav-link">Nosotros</a>
+                    <a href="./views/Dashboard/feature.php" class="nav-item nav-link">Caracteristicas</a>
+                    <a href="./views/Dashboard/contact.php" class="nav-item nav-link">Contacto</a>
                     <a href="./views/sesion/login.php" class="nav-item nav-link">Inicio de sesion</a>
                 </div>
 
@@ -60,17 +59,17 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="./public/img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
-                        <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Best Gym In Town</h2>
-                        <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                        <h3 class="text-primary text-capitalize m-0">EVOLUTION GYM</h3>
+                        <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">EL mejor Gimnasio</h2>
+                        <a href="./views/sesion/register.php" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Unete</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="w-100" src="./public/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
-                        <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Get Body In Shape</h2>
-                        <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                        <h3 class="text-primary text-capitalize m-0">EVOLUTION GYM</h3>
+                        <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Pon tu cuerpo en forma</h2>
+                        <a href="./views/sesion/register.php" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Unete</a>
                     </div>
                 </div>
             </div>
@@ -91,23 +90,25 @@
             <div class="col-md-6 p-0">
                 <div class="gym-class-box d-flex flex-column align-items-end justify-content-center bg-primary text-right text-white py-5 px-5">
                     <i class="flaticon-six-pack"></i>
-                    <h3 class="display-4 mb-3 text-white font-weight-bold">Body Building</h3>
-                    <p>
-                        Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores, dolor
-                        sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at..
-                    </p>
-                    <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>
+                    <h3 class="display-4 mb-3 text-white font-weight-bold">MISIÓN</h3>
+                    <p class="text-justify">
+                    "Proporcionar un ambiente inspirador y motivador que promueva un estilo de vida saludable y activo,
+                        ofreciendo instalaciones de calidad, entrenamientos personalizados y programas de acondicionamiento
+                        físico para personas de todas las edades y niveles de condición física. Nuestra misión es ayudar a nuestros
+                        miembros a alcanzar sus objetivos de bienestar, fomentando la salud, la felicidad y el bienestar general."
+                        <img class="w-100" src="./public/img/blog-2.jpg" alt="Image">
                 </div>
             </div>
             <div class="col-md-6 p-0">
                 <div class="gym-class-box d-flex flex-column align-items-start justify-content-center bg-secondary text-left text-white py-5 px-5">
                     <i class="flaticon-bodybuilding"></i>
-                    <h3 class="display-4 mb-3 text-white font-weight-bold">Muscle Building</h3>
-                    <p>
-                        Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores, dolor
-                        sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at..
-                    </p>
-                    <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>
+                    <h3 class="display-4 mb-3 text-white font-weight-bold">VISIÓN</h3>
+                    <p class="text-justify">
+                    "Nos esforzamos por convertirnos en el gimnasio líder en nuestra comunidad y más allá, reconocidos por nuestra
+                        excelencia en servicios, innovación en programas de acondicionamiento físico y la creación de un ambiente amigable
+                        y acogedor para nuestros miembros. Nuestra visión es ser el destino preferido para aquellos que buscan mejorar su
+                        salud y forma física, brindando resultados tangibles y sostenibles a largo plazo para todos nuestros clientes y miembros."
+                        <img class="w-100" src="./public/img/about.jpg" alt="Image">
                 </div>
             </div>
         </div>
@@ -115,43 +116,15 @@
     <!-- Gym Class End -->
 
 
-    <!-- About Start -->
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <img class="img-fluid mb-4 mb-lg-0" src="./public/img/about.jpg" alt="Image">
-            </div>
-            <div class="col-lg-6">
-                <h2 class="display-4 font-weight-bold mb-4">10 Years Experience</h2>
-                <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum</p>
-                <div class="row py-2">
-                    <div class="col-sm-6">
-                        <i class="flaticon-barbell display-2 text-primary"></i>
-                        <h4 class="font-weight-bold">Certified GYM Center</h4>
-                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <i class="flaticon-medal display-2 text-primary"></i>
-                        <h4 class="font-weight-bold">Award Winning</h4>
-                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
-                    </div>
-                </div>
-                <a href="" class="btn btn-lg px-4 btn-outline-primary">Learn More</a>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Features Start -->
-    <div class="container-fluid my-5">
+     <!-- Features Start -->
+     <div class="container-fluid my-5">
         <div class="row">
             <div class="col-lg-4 p-0">
                 <div class="d-flex align-items-center bg-secondary text-white px-5" style="min-height: 300px;">
                     <i class="flaticon-training display-3 text-primary mr-3"></i>
                     <div class="">
-                        <h2 class="text-white mb-3">Progression</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        <h2 class="text-white mb-3">Progreso</h2>
+                        <p> Organiza tu horario para tus ejercicios 
                         </p>
                     </div>
                 </div>
@@ -160,8 +133,8 @@
                 <div class="d-flex align-items-center bg-primary text-white px-5" style="min-height: 300px;">
                     <i class="flaticon-weightlifting display-3 text-secondary mr-3"></i>
                     <div class="">
-                        <h2 class="text-white mb-3">Workout</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        <h2 class="text-white mb-3">Rutinas de ejercicios</h2>
+                        <p>Siempre es bueno empezar calentando 
                         </p>
                     </div>
                 </div>
@@ -170,8 +143,8 @@
                 <div class="d-flex align-items-center bg-secondary text-white px-5" style="min-height: 300px;">
                     <i class="flaticon-treadmill display-3 text-primary mr-3"></i>
                     <div class="">
-                        <h2 class="text-white mb-3">Nutrition</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        <h2 class="text-white mb-3">Nutrición</h2>
+                        <p>Una nutrición balanceada es muy importante para mantener el equilibrio fisico de tu cuerpo
                         </p>
                     </div>
                 </div>
@@ -181,139 +154,12 @@
     <!-- Features End -->
 
 
-    <!-- GYM Feature Start -->
-    <div class="container feature pt-5">
-        <div class="d-flex flex-column text-center mb-5">
-            <h4 class="text-primary font-weight-bold">Why Choose Us?</h4>
-            <h4 class="display-4 font-weight-bold">Benifits of Joining Our GYM</h4>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mb-5">
-                <div class="row align-items-center">
-                    <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="./public/img/feature-1.jpg" alt="Image">
-                        <i class="flaticon-barbell"></i>
-                    </div>
-                    <div class="col-sm-7">
-                        <h4 class="font-weight-bold">Videos Instruction</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="row align-items-center">
-                    <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="./public/img/feature-2.jpg" alt="Image">
-                        <i class="flaticon-training"></i>
-                    </div>
-                    <div class="col-sm-7">
-                        <h4 class="font-weight-bold">Training Calendar</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="row align-items-center">
-                    <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="./public/img/feature-3.jpg" alt="Image">
-                        <i class="flaticon-trends"></i>
-                    </div>
-                    <div class="col-sm-7">
-                        <h4 class="font-weight-bold">Free Apps & WiFi</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="row align-items-center">
-                    <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="./public/img/feature-4.jpg" alt="Image">
-                        <i class="flaticon-support"></i>
-                    </div>
-                    <div class="col-sm-7">
-                        <h4 class="font-weight-bold">Community Support</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- GYM Feature End -->
 
-
-    <!-- Subscribe Start -->
-    <div class="subscribe container-fluid my-5 py-5 text-center">
-        <h4 class="display-4 text-white font-weight-bold mt-5 mb-3">Subscribe Our Newsletter</h4>
-        <p class="text-white mb-4">Subscribe and get Our latest article in your inbox</p>
-        <form class="form-inline justify-content-center mb-5">
-            <div class="input-group">
-                <input type="text" class="form-control-lg" placeholder="Your Email">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit">Subscribe</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <!-- Subscribe End -->
-
-
-  
-
-    <!-- BMI Calculation Start -->
-    <div class="container-fluid position-relative bmi my-5">
-        <div class="container">
-            <div class="row px-3 align-items-center">
-                <div class="col-md-6">
-                    <div class="pr-md-3 d-none d-md-block">
-                        <h4 class="text-primary">Body Mass Index </h4>
-                        <h4 class="display-4 text-white font-weight-bold mb-4">Whate is BMI?</h4>
-                        <p class="m-0 text-white">Vero elitr lorem magna justo magna justo at justo est ipsum sed clita lorem dolor ipsum sed. Lorem sea lorem vero. Sanct dolor clita clita rebum kasd magna erat diam</p>
-                    </div>
-                </div>
-                <div class="col-md-6 bg-secondary py-5">
-                    <div class="py-5 px-3">
-                        <h1 class="mb-4 text-white">Calculate your BMI</h1>
-                        <form>
-                            <div class="form-row">
-                                <div class="col form-group">
-                                    <input type="text" class="form-control form-control-lg bg-dark text-white" placeholder="Weight (KG)">
-                                </div>
-                                <div class="col form-group">
-                                    <input type="text" class="form-control form-control-lg bg-dark text-white" placeholder="Height (CM)">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col form-group">
-                                    <input type="text" class="form-control form-control-lg bg-dark text-white" placeholder="Age">
-                                </div>
-                                <div class="col form-group">
-                                    <select class="custom-select custom-select-lg bg-dark text-muted">
-                                        <option>Gender</option>
-                                        <option>Mal</option>
-                                        <option>Female</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <input type="button" class="btn btn-lg btn-block btn-dark border-light"
-                                        value="Calculate Now">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- BMI Calculation End -->
-
-
-    <!-- Team Start -->
+        <!-- Team Start -->
     <div class="container pt-5 team">
         <div class="d-flex flex-column text-center mb-5">
-            <h4 class="text-primary font-weight-bold">Our Trainers</h4>
-            <h4 class="display-4 font-weight-bold">Meet Our Expert Trainers</h4>
+            <h4 class="text-primary font-weight-bold">Nuestros Entrenadores</h4>
+            <h4 class="display-4 font-weight-bold">Conoce a Nuestros Entrenadores Expertos</h4>
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-5">
@@ -326,8 +172,8 @@
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="card-body bg-secondary">
-                        <h4 class="card-title text-primary">Trainer Name</h4>
-                        <p class="card-text">Trainer</p>
+                        <h4 class="card-title text-primary">Juan Perez</h4>
+                        <p class="card-text">Entrenador</p>
                     </div>
                 </div>
             </div>
@@ -342,7 +188,7 @@
                     </div>
                     <div class="card-body bg-secondary">
                         <h4 class="card-title text-primary">Trainer Name</h4>
-                        <p class="card-text">Trainer</p>
+                        <p class="card-text">Entrenador</p>
                     </div>
                 </div>
             </div>
@@ -357,7 +203,7 @@
                     </div>
                     <div class="card-body bg-secondary">
                         <h4 class="card-title text-primary">Trainer Name</h4>
-                        <p class="card-text">Trainer</p>
+                        <p class="card-text">Entrenador</p>
                     </div>
                 </div>
             </div>
@@ -372,7 +218,7 @@
                     </div>
                     <div class="card-body bg-secondary">
                         <h4 class="card-title text-primary">Trainer Name</h4>
-                        <p class="card-text">Trainer</p>
+                        <p class="card-text">Entrenador</p>
                     </div>
                 </div>
             </div>
@@ -381,8 +227,64 @@
     <!-- Team End -->
 
 
+    
+
+  
+
+     
+    <!-- BMI Calculation Start -->
+    <div class="container-fluid position-relative bmi my-5">
+        <div class="container">
+            <div class="row px-3 align-items-center">
+                <div class="col-md-6">
+                    <div class="pr-md-3 d-none d-md-block">
+                        <h4 class="text-primary">Índice de Masa Corporal</h4>
+                        <h4 class="display-4 text-white font-weight-bold mb-4">¿Qué es un IMC?</h4>
+                        <p class="center-text text-justify">El Índice de Masa Corporal (IMC), en inglés Body Mass Index (BMI), es una medida utilizada para evaluar la relación entre el peso y la altura de una persona. Se utiliza comúnmente como una herramienta para clasificar si una persona tiene un peso bajo, normal, sobrepeso u obesidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-secondary py-5">
+                    <div class="py-5 px-3">
+                        <h1 class="mb-4 text-white">Calcula tu Índice de Masa Corporal</h1>
+                        <form id="bmi-form">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <input type="text" id="weight" class="form-control form-control-lg bg-dark text-white" placeholder="Peso (KG)">
+                                </div>
+                                <div class="col form-group">
+                                    <input type="text" id="height" class="form-control form-control-lg bg-dark text-white" placeholder="Altura (CM)">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <input type="text" id="age" class="form-control form-control-lg bg-dark text-white" placeholder="Edad">
+                                </div>
+                                <div class="col form-group">
+                                    <select id="gender" class="custom-select custom-select-lg bg-dark text-muted">
+                                        <option value="default">Género</option>
+                                        <option value="male">Hombre</option>
+                                        <option value="female">Mujer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="button" id="calculate-btn" class="btn btn-lg btn-block btn-dark border-light" value="Calcular Ahora">
+                                </div>
+                            </div>
+                        </form>
+                        <div id="result" class="mt-4 text-white"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BMI Calculation End -->
+
+
+
     <!-- Testimonial Start -->
-    <div class="container-fluid position-relative testimonial my-5">
+   <!-- <div class="container-fluid position-relative testimonial my-5">
         <div class="container">
             <div class="row px-3 align-items-center">
                 <div class="col-md-6 bg-secondary">
@@ -443,56 +345,53 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
-
-    <!-- Blog Start -->
-    <div class="container pt-5">
+  <!-- Blog Start -->
+  <div class="container pt-5">
         <div class="d-flex flex-column text-center mb-5">
-            <h4 class="text-primary font-weight-bold">Our Blog</h4>
-            <h4 class="display-4 font-weight-bold">Latest Article From Blog</h4>
+            <h4 class="text-primary font-weight-bold">Nuestros Blogs</h4>
+            <h4 class="display-4 font-weight-bold">Articulos Destacados</h4>
         </div>
         <div class="row">
             <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="./public/img/blog-1.jpg" alt="Image">
+
                 <div class="d-flex align-items-center mb-4">
                     <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
-                        <small>01</small>
-                        <strong class="text-uppercase m-0 text-white">Jan</strong>
-                        <small>2045</small>
+                        <small>24</small>
+                        <strong class="text-uppercase m-0 text-white">Agosto</strong>
+                        <small>2023</small>
                     </div>
                     <div class="pl-3">
-                        <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                        <h3 class="font-weight-bold">La Importancia de una Buena Alimentación para una Vida Saludable</h3>
                         <div class="d-flex">
-                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Administrador</small>
+
                         </div>
                     </div>
                 </div>
-                <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos, sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero dolor sed kasd accusam</p>
-                <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
+                <p class="text-justify">La alimentación juega un papel fundamental en nuestra salud y bienestar. Una dieta equilibrada y nutritiva no solo nos proporciona la energía necesaria para llevar a cabo nuestras actividades diarias, sino que también es esencial para prevenir enfermedades y mantener un estilo de vida saludable. A continuación</p>
+                <a class="btn btn-outline-primary mt-2 px-3" href="./blog.php">Mas Información <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="./public/img/blog-2.jpg" alt="Image">
+
                 <div class="d-flex align-items-center mb-4">
                     <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
-                        <small>01</small>
-                        <strong class="text-uppercase m-0 text-white">Jan</strong>
-                        <small>2045</small>
+                        <small>24</small>
+                        <strong class="text-uppercase m-0 text-white">Agosto</strong>
+                        <small>2023</small>
                     </div>
                     <div class="pl-3">
-                        <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                        <h3 class="font-weight-bold">Los Beneficios del Ejercicio para una Vida Saludable</h3>
                         <div class="d-flex">
-                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Administrador</small>
+
                         </div>
                     </div>
                 </div>
-                <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos, sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero dolor sed kasd accusam</p>
-                <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
+                <p class="text-justify">El ejercicio físico regular no solo es esencial para mantener un cuerpo en forma, sino que también tiene un impacto profundo en nuestra salud mental y emocional. Desde la mejora de la condición cardiovascular hasta la reducción del estrés, los beneficios del ejercicio son numerosos y variados.</p>
+                <a class="btn btn-outline-primary mt-2 px-3" href="./blog.php">Mas Información <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
@@ -500,57 +399,54 @@
 
 
     <!-- Footer Start -->
-    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Quick Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Popular Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-primary mb-4">Opening Hours</h4>
-                <h5 class="text-white">Monday - Friday</h5>
-                <p>8.00 AM - 8.00 PM</p>
-                <h5 class="text-white">Saturday - Sunday</h5>
-                <p>2.00 PM - 8.00 PM</p>
-            </div>
-        </div>
-        <div class="container border-top border-dark pt-5">
-            <p class="m-0 text-center text-white">
-                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
-                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
-        </div>
-    </div>
+    <?php include_once('./views/html/footer.php') ?>
     <!-- Footer End -->
+    <!-- Calcular ICM-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calculateBtn = document.getElementById('calculate-btn');
+            const resultDiv = document.getElementById('result');
+            const weightInput = document.getElementById('weight');
+            const heightInput = document.getElementById('height');
+            const ageInput = document.getElementById('age');
+            const genderSelect = document.getElementById('gender');
 
+            calculateBtn.addEventListener('click', function() {
+                const weight = parseFloat(weightInput.value);
+                const height = parseFloat(heightInput.value); // Altura en metros
+                const age = parseInt(ageInput.value);
+                const gender = genderSelect.value;
+
+                if (isNaN(weight) || isNaN(height) || isNaN(age) || gender === 'default') {
+                    resultDiv.innerHTML = '<p class="text-danger">Por favor, completa todos los campos.</p>';
+                    return;
+                }
+
+                const bmi = weight / (height * height);
+
+                let interpretation = '';
+                if (bmi < 18.5) {
+                    interpretation = 'Bajo peso';
+                } else if (bmi < 24.9) {
+                    interpretation = 'Peso normal';
+                } else if (bmi < 29.9) {
+                    interpretation = 'Sobrepeso';
+                } else {
+                    interpretation = 'Obesidad';
+                }
+
+                resultDiv.innerHTML = `<p>Tu IMC es: ${bmi.toFixed(2)}</p><p>Interpretación: ${interpretation}</p>`;
+
+                // Limpiar los campos de entrada
+                weightInput.value = '';
+                heightInput.value = '';
+                ageInput.value = '';
+                genderSelect.value = 'default';
+            });
+        });
+    </script>
+
+    <!-- Fin-->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>

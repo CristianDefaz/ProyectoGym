@@ -1,84 +1,43 @@
-<?php include_once('../../config/sesiones.php') ?>
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-<!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="../Dashboard/">
-    
-<div class="sidebar-brand-text mx-3">EVOLUTION GYM
-    <img class="rounded-circle" src="https://svgsilh.com/svg_v2/1048852.svg">
-</div>
-
-<style>
-    .rounded-circle {
-        border-radius: 50%;
-        width: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
-        height: 50px;
-    }
-</style>
-   
-</a>
-
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-
-<!-- Nav Item - Dashboard -->
-<li class="nav-item active">
-    <a class="nav-link" href="../Dashboard/home.php">
-        <i class="fas fa-fw fa-sticky-note"></i>
-        <span>Menu</span></a>
-</li>
-
-<!-- Divider -->
-<hr class="sidebar-divider">
-
-<!-- Heading -->
-<div class="sidebar-heading">
-    Menu General
-</div>
-
-<!-- Nav Item - Pages Collapse Menu -->
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-        aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fas fa-fw fa-table"></i>
-        <span>Datos</span>
-    </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-    <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Menu</h6>
-        <?php
-if (error_reporting(0)) {
-    $rol_id = $_SESSION['rol_id'];
-
-    if ($rol_id == '2') {
-        echo '<a class="collapse-item" href="../Clientes/cliente.views.php">Clientes</a>';
-        echo '<a class="collapse-item" href="../Membresias/Membresias.views.php">Membresias Activas</a>';
-        echo '<a class="collapse-item" href="../MembresiaExpirada/Emembresia.views.php">Membresia Expiradas</a>';
-        echo '<a class="collapse-item" href="../Facturas/facturas.views.php">Facturas</a>';
-    } elseif ($rol_id == '1') {
-        echo '<a class="collapse-item" href="../Empleados/empleados.views.php">Empleados</a>';
-        echo '<a class="collapse-item" href="../Clientes/cliente.views.php">Clientes</a>';
-        echo '<a class="collapse-item" href="../Tipo_Membresias/Tipo.Membresias.views.php">Tipo Membresia</a>';
-        echo '<a class="collapse-item" href="../Membresias/Membresias.views.php">Membresias Activas</a>';
-        echo '<a class="collapse-item" href="../MembresiaExpirada/Emembresia.views.php">Membresia Expiradas</a>';
-        echo '<a class="collapse-item" href="../Facturas/facturas.views.php">Facturas</a>';
-        echo '<a class="collapse-item" href="../TablasMonto/TablaMonto.views.php">Tabla Monto</a>';
-    }
-}
-?>
+<!-- Footer Start -->
+<div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Información</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Calle Ibarra y Guayaquil (Santo Domingo - Ecuador)</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+593 98 514 3463</p>
+                <p><i class="fa fa-envelope mr-2"></i>arielllerena2001@outlook.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+          
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Mas Información</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="../../views/Dashboard/home.php"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    <a class="text-white mb-2" href="../../views/Dashboard/about.php"><i class="fa fa-angle-right mr-2"></i>Sobre Nosotros</a>
+                    <a class="text-white mb-2" href="../../views/Dashboard/feature.php"><i class="fa fa-angle-right mr-2"></i>Caracteristicas</a>
+                    <a class="text-white mb-2" href="../../views/Membresias/Membresia.views.php"><i class="fa fa-angle-right mr-2"></i>Membresias Activas</a>
+                    <a class="text-white mb-2" href="../../views/Membresia expirada/membresiaex.views.php"><i class="fa fa-angle-right mr-2"></i>Membresias Experidas</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Horas de Atención</h4>
+                <h5 class="text-white">Lunes - Viernes</h5>
+                <p>8.00 AM - 8.00 PM</p>
+                <h5 class="text-white">Sabado</h5>
+                <p>2.00 PM - 8.00 PM</p>
+            </div>
+        </div>
+        <div class="container border-top border-dark pt-5">
+            <p class="m-0 text-center text-white">
+                &copy; <a class="text-white font-weight-bold" href="#">Energy GYM</a>. All Rights Reserved. Designed by:Jhony Miranda, Cristian Defez, Ariel Llerena, Kevin Sanchez
+                <a class="text-white font-weight-bold"></a>
+            </p>
+        </div>
     </div>
-</div>
-
-
-</li>
-
-
-<!-- Divider -->
-<hr class="sidebar-divider d-none d-md-block">
-
-<!-- Sidebar Toggler (Sidebar) -->
-
-
-<!-- Sidebar Message -->
-
-</ul>
+    <!-- Footer End -->

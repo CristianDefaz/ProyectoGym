@@ -285,13 +285,13 @@ $.ajax({
 
             Swal.fire({
                 icon: 'success',
-                title: 'Bienvenida',
-                text: `<?php echo $_SESSION['bienvenida']; ?> Tu membresía expirará en ${tiempoRestante}.`,
+                title: 'Bienvenido',
+                text: `<?php echo $_SESSION['bienvenido']; ?> Tu membresía expirará en ${tiempoRestante}.`,
             });
         } else {
             Swal.fire({
                 icon: 'warning',
-                title: 'No se encontró información de membresía',
+                title: 'No posee una membresía activa actualmente',
                 text: 'No se encontró información de membresía para el cliente actual.',
             });
         }

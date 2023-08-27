@@ -42,43 +42,16 @@
             </div>
             <div class="col-sm-4 text-center mb-3">
                 <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
-                <h4 class="font-weight-bold">Email</h4>
+                <h4 class="font-weight-bold">Correo</h4>
                 <p>arielllerena2001@outlook.com</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 pb-5">
-                <iframe style="width: 100%; height: 392px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1662191611427!2d-79.1697507!3d-0.2521436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d547896b6ff71f%3A0xcb4cf2394e0fe006!2sEvolution%20Gym!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
+        <div class="row justify-content-center">
+    <div class="col-md-6 pb-5 text-center">
+        <iframe style="width: 100%; height: 392px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1662191611427!2d-79.1697507!3d-0.2521436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d547896b6ff71f%3A0xcb4cf2394e0fe006!2sEvolution%20Gym!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
 
-
-            <div class="col-md-6 pb-5">
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Ingrese su nombre" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Ingrese su dirección de correo" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Ingrese un titulo" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Ingrese su Mensaje"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Enviar Mensaje</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- Contact End -->
 

@@ -8,6 +8,7 @@ function init() {
   $().ready(() => {
     cargartablaF();
     cargaselect();
+    verificarMembresia();
   });
   
   var cargartablaF = () => {
@@ -66,7 +67,43 @@ function init() {
 }
 
 
-
+function verificarMembresia() {
+  // Hacer una solicitud AJAX al servidor para obtener la información de la membresía
+  // Supongamos que estás usando jQuery para hacer la solicitud AJAX
+  $.ajax({
+      url: '../../controllers/membresia.controller.php?op=todos',  // Reemplaza con la URL correcta
+      type: 'GET',
+      dataType: 'json',
+      success: function(data) {
+          if (data.length > 0) {
+              document.getElementById("comprarBtn").disabled = true;
+              Swal.fire('Informacion', 'Actualmente tienen una membresia activa');
+              console.log("Cliente tiene una membresía activa. Botón bloqueado.");
+          } else {
+              document.getElementById("comprarBtn").disabled = false;
+              console.log("Cliente no tiene membresía activa. Botón habilitado.");
+          }
+      },
+      error: function() {
+          console.error("Error al obtener los datos de la membresía.");
+      }
+  });
+  $.ajax({
+    url: '../../controllers/factura.controller.php?op=todos',  // Reemplaza con la URL correcta
+    type: 'GET',
+    dataType: 'json',
+    success: function(data) {
+        if (data.length > 0) {
+            document.getElementById("comprarBtn").disabled = true;
+            Swal.fire('Informacion', 'Actualmente tiene ya una compra "Pendiente" esperar activacion');
+            console.log("Cliente tiene una compra hecha. Botón bloqueado.");
+        } 
+    },
+    error: function() {
+        console.error("Error al obtener los datos de la membresía.");
+    }
+});
+}
 
   
   var cargaselect = () => {
@@ -129,6 +166,7 @@ function init() {
           Swal.fire('Factura', 'Se guardo con exito', 'success');
           limpiar();
           cargartablaF();
+          verificarMembresia();
         } else {
           Swal.fire('Factura', 'Ocurrio un error', 'danger');
         }
@@ -175,6 +213,7 @@ function init() {
             Swal.fire('Factura', 'Se eliminó con éxito', 'success');
             limpiar();
             cargartablaF();
+            verificarMembresia();
           }
         })
       }

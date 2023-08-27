@@ -54,15 +54,14 @@ if (isset($_SESSION["cliente_id"])) {
     </div>
     <!-- Contact End -->
 
-    
-
 
     <!-- Testimonial Start -->
     <div class="container-fluid position-relative  mt-5" style="margin-bottom: 90px;">
                 <div class="card shadow mb-4">
+
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">Lista de Membresias Expiradas</h6>
-                                        <button onclick="cargaselect()" class="btn btn-primary float-right" data-toggle="modal" data-target="#modalfactura"> Comprar Membresia</button>
+                                        <button id="comprarBtn" onclick="cargaselect()" class="btn btn-primary float-right" data-toggle="modal" data-target="#modalfactura">Comprar Membresia</button></div>
                                     </div>
                                     <div class="card-body">
                                         <table class="table table-bordered table-striped table-responsive">
@@ -155,6 +154,11 @@ if (isset($_SESSION["cliente_id"])) {
     <!-- Page level plugins -->
     <script src="../../public/vendor/chart.js/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        verificarMembresia(); // Llamada a la función una vez que la página ha cargado
+    });
+</script>
 
 <script src="./recibom.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>

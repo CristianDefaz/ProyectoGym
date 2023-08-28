@@ -26,8 +26,8 @@
     <!-- Contact Start -->
     <div class="container pt-5">
         <div class="d-flex flex-column text-center mb-5">
-            <h4 class="text-primary font-weight-bold">Ubicación</h4>
-            <h4 class="display-4 font-weight-bold">Correo</h4>
+            <h4 class="text-primary font-weight-bold">Contactanos</h4>
+            <h4 class="display-4 font-weight-bold">Con la siguiente Informacion</h4>
         </div>
         <div class="row px-3 pb-2">
             <div class="col-sm-4 text-center mb-3">
@@ -38,12 +38,12 @@
             <div class="col-sm-4 text-center mb-3">
                 <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
                 <h4 class="font-weight-bold">Telefono</h4>
-                <p>+593 98 514 3463</p>
+                <p>+593-994338674</p>
             </div>
             <div class="col-sm-4 text-center mb-3">
                 <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
                 <h4 class="font-weight-bold">Correo</h4>
-                <p>arielllerena2001@outlook.com</p>
+                <p>wilmercarrerachicango@hotmail.com</p>
             </div>
         </div>
         <div class="row justify-content-center">

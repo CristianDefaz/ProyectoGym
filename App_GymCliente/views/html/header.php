@@ -12,14 +12,16 @@
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
                     <a href="../Dashboard/home.php" class="nav-item nav-link active">Menu</a>
                     <a href="../Dashboard/about.php" class="nav-item nav-link">Nosotros</a>
-                    <a href="../Dashboard/blog.php" class="nav-item nav-link">Articulos</a>
-                    <a href="../Dashboard/feature.php" class="nav-item nav-link">Info de Membresias</a>
-                    <a href="../ReciboMembresia/recibom.views.php" class="nav-item nav-link">Comprar Membresias</a>
-                    <div class="nav-item dropdown">
-                        
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="../Dashboard/blog.php" class="dropdown-item">Blog Grid</a>
-                            <a href="../Dashboard/single.php" class="dropdown-item">Blog Detail</a>
+                    <a href="../Dashboard/blog.php" class="nav-item nav-link">Salud y Bienestar</a>
+                    <a href="../Dashboard/feature.php" class="nav-item nav-link">Informacion de Membresias</a>
+                    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Comprar Membresias
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="../../views/ReciboMembresia/recibom.views.php">Compras pendientes</a>
+                            <a class="dropdown-item" href="../../views/Historialrecibo/historialrecibo.php">Historial compras activas</a>
                         </div>
                     </div>
                     

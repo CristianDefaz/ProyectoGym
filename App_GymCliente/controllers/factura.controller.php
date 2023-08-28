@@ -18,6 +18,16 @@ switch ($_GET['op']) {
         echo json_encode($todos);
         break;
 
+
+        case 'todos1':
+            $todos = array();
+            $datos = $Factura->todos1();
+            while ($fila = mysqli_fetch_assoc($datos)) {
+                $todos[] = $fila;
+            }
+            echo json_encode($todos);
+            break;   
+
         case 'uno':
             $idfactura = $_POST['id_recibo'];
             $datos = array();

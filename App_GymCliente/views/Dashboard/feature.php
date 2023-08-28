@@ -12,11 +12,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Info de Membresias</h4>
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Informacion de Membresias</h4>
             <div class="d-inline-flex">
                 <p class="m-0 text-white"><a class="text-white" href="./home.php">Inicio</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Info de Membresias</p>
+                <p class="m-0 text-white">Informacion de Membresias</p>
             </div>
         </div>
     </div>

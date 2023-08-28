@@ -30,21 +30,21 @@
                 <img class="img-fluid mb-4 mb-lg-0" src="../../public/img/about.jpg" alt="Image">
             </div>
             <div class="col-lg-6">
-                <h2 class="display-4 font-weight-bold mb-4">10 años de Experiencia</h2>
-                <p class="center-text text-justify">La experiencia en Energy Gym es enriquecedora y va más allá del ejercicio. Ofrecemos una amplia gama de equipos y actividades para todos los gustos, respaldados por entrenadores expertos que brindan orientación personalizada. </p>
+                <h2 class="display-4 font-weight-bold mb-4">Años de Experiencia</h2>
+                <p class="center-text text-justify">La experiencia en Evolution Gym es enriquecedora y va más allá del ejercicio. Ofrecemos una amplia gama de equipos y actividades para todos los gustos, respaldados por entrenadores expertos que brindan orientación personalizada. </p>
                 <div class="row py-2">
                     <div class="col-sm-6">
                         <i class="flaticon-barbell display-2 text-primary"></i>
-                        <h4 class="font-weight-bold">Certified GYM Center</h4>
-                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
+                        <h4 class="font-weight-bold">Maquinas</h4>
+                        <p>Gran gama de maquinas las cuales puedes usar para cualquier ejercicio </p>
                     </div>
                     <div class="col-sm-6">
                         <i class="flaticon-medal display-2 text-primary"></i>
-                        <h4 class="font-weight-bold">Award Winning</h4>
-                        <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
+                        <h4 class="font-weight-bold">Mejor Gymnasio</h4>
+                        <p>Nuestro Gymnasio esta entre los mejores de la provincia</p>
                     </div>
                 </div>
-                <a href="" class="btn btn-lg px-4 btn-outline-primary">Learn More</a>
+                <a href="https://estudiarcoachingdeportivo.es/maquinas-de-gimnasio/" class="btn btn-lg px-4 btn-outline-primary">Mas Informacion</a>
             </div>
         </div>
     </div>

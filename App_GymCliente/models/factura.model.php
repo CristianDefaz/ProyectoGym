@@ -16,6 +16,16 @@ class facturaModel
         $datos = mysqli_query($con, $cadena);
         return $datos;
     }
+
+    public function todos1()
+    {
+        $con = new ClaseConexion();
+        $con = $con->ProcedimientoConectar();
+        $cliente_id = $_SESSION["cliente_id"];
+        $cadena = "SELECT * FROM recibos_membresia INNER JOIN cliente ON recibos_membresia.cli_id = cliente.cliente_id INNER JOIN tipo_menbresia ON recibos_membresia.men_id = tipo_menbresia.tipo_id Where cliente_id = $cliente_id and estado='Activo'" ;
+        $datos = mysqli_query($con, $cadena);
+        return $datos;
+    }
     
     public function Insertar($cliente, $fecha, $membresia, $monto, $estado, $imagen) {
         $con = new ClaseConexion();
@@ -53,7 +63,8 @@ class facturaModel
     public function consultafecha($fechaDesde, $fechaHasta) {
         $con = new ClaseConexion();
         $con = $con->ProcedimientoConectar();
-        $cadena = "SELECT * FROM facturas INNER JOIN cliente ON facturas.cli_id = cliente.cliente_id INNER JOIN tipo_menbresia ON facturas.men_id = tipo_menbresia.tipo_id INNER JOIN empleado ON facturas.id_empleado = empleado.em_id WHERE fa_fecha BETWEEN '$fechaDesde' AND '$fechaHasta'";
+        $cliente_id = $_SESSION["cliente_id"];
+        $cadena = "SELECT * FROM recibos_membresia INNER JOIN cliente ON recibos_membresia.cli_id = cliente.cliente_id INNER JOIN tipo_menbresia ON recibos_membresia.men_id = tipo_menbresia.tipo_id WHERE cliente_id = $cliente_id and fa_fecha BETWEEN '$fechaDesde' AND '$fechaHasta'";
         $datos = mysqli_query($con, $cadena);
         $facturasFiltradas = array();
         while ($row = mysqli_fetch_assoc($datos)) {

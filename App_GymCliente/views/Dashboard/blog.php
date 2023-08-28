@@ -11,11 +11,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Nuestro Blog</h4>
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Salud y Ejercicio</h4>
             <div class="d-inline-flex">
                 <p class="m-0 text-white"><a class="text-white" href="">Inicio</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Blogs</p>
+                <p class="m-0 text-white">Salud</p>
             </div>
         </div>
     </div>
@@ -25,8 +25,8 @@
     <!-- Blog Start -->
     <div class="container pt-5">
         <div class="d-flex flex-column text-center mb-5">
-            <h4 class="text-primary font-weight-bold">Nuestros Blogs</h4>
-            <h4 class="display-4 font-weight-bold">Articulos Destacados</h4>
+            <h4 class="text-primary font-weight-bold">Salud y Ejercicio</h4>
+            <h4 class="display-4 font-weight-bold">Informacion Destacada</h4>
         </div>
         <div class="row">
             <div class="col-lg-6 mb-5 blog-item">
